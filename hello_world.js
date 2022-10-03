@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 
+let numberOfRequests = 0
+
 app.get('/', function (req, res) {
-    res.send('Hello world');
+    numberOfRequests += 1
+    res.send(`Number of request = ${numberOfRequests}`);
 });
 
 const server = app.listen(8081, function () {
