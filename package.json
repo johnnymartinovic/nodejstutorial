@@ -1,6 +1,10 @@
 {
   "name": "nodejstutorial",
   "version": "1.0.0",
+  "main": "hello_world.js",
+  "scripts": {
+    "start": "node hello_world.js"
+  },
   "dependencies": {
     "express": "^4.18.1"
   }
